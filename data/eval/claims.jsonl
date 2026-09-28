@@ -1,0 +1,71 @@
+{"id": "c001", "question": "How much annual leave do I get?", "claim": "Full-time employees get 24 days of paid annual leave each calendar year.", "label": "supported"}
+{"id": "c002", "question": "How much annual leave do I get?", "claim": "Annual leave accrues at 2 days for every month of service.", "label": "supported"}
+{"id": "c003", "question": "How much annual leave do I get?", "claim": "Full-time employees receive 30 days of paid annual leave per year.", "label": "contradicted"}
+{"id": "c004", "question": "Can I carry forward leave?", "claim": "Up to 10 unused leave days can be carried forward to the next year.", "label": "supported"}
+{"id": "c005", "question": "Can I carry forward leave?", "claim": "Up to 15 unused leave days can be carried forward to the next year.", "label": "contradicted"}
+{"id": "c006", "question": "Can I carry forward leave?", "claim": "Unused days that are not carried forward can be encashed at the basic salary rate.", "label": "unsupported"}
+{"id": "c007", "question": "What is the sick leave policy?", "claim": "Employees get 12 days of paid sick leave per year.", "label": "supported"}
+{"id": "c008", "question": "What is the sick leave policy?", "claim": "A medical certificate is needed for sick leave longer than 3 consecutive days.", "label": "supported"}
+{"id": "c009", "question": "What is the sick leave policy?", "claim": "A medical certificate is not required for sick leave of any length.", "label": "contradicted"}
+{"id": "c010", "question": "What is the parental leave policy?", "claim": "Maternity leave is 26 weeks and fully paid.", "label": "supported"}
+{"id": "c011", "question": "What is the parental leave policy?", "claim": "Paternity leave is 5 working days.", "label": "contradicted"}
+{"id": "c012", "question": "What is the parental leave policy?", "claim": "Adoptive parents receive 12 weeks of paid leave.", "label": "unsupported"}
+{"id": "c013", "question": "What is the parental leave policy?", "claim": "New fathers get two weeks off, to be used before the baby is half a year old.", "label": "supported"}
+{"id": "c014", "question": "Can I work from home?", "claim": "After probation, employees can work remotely for up to 3 days per week.", "label": "supported"}
+{"id": "c015", "question": "Can I work from home?", "claim": "Employees may work remotely for up to 4 days per week after probation.", "label": "contradicted"}
+{"id": "c016", "question": "How long is probation?", "claim": "The probation period lasts 6 months.", "label": "supported"}
+{"id": "c017", "question": "How long is probation?", "claim": "Probation can be extended by the manager for another 3 months.", "label": "unsupported"}
+{"id": "c018", "question": "Can I work fully remote?", "claim": "Fully remote arrangements need written approval from a Vice President.", "label": "supported"}
+{"id": "c019", "question": "Can I work fully remote?", "claim": "Fully remote work can be approved by your direct manager.", "label": "contradicted"}
+{"id": "c020", "question": "What are core hours?", "claim": "Remote employees must be reachable from 11 am to 4 pm IST.", "label": "supported"}
+{"id": "c021", "question": "What are core hours?", "claim": "Remote employees must be reachable from 10 am to 6 pm IST.", "label": "contradicted"}
+{"id": "c022", "question": "Is there a home office allowance?", "claim": "There is a one-time home office allowance of 15000 rupees.", "label": "supported"}
+{"id": "c023", "question": "Is there a home office allowance?", "claim": "The home office allowance is renewed every year.", "label": "unsupported"}
+{"id": "c024", "question": "Is there a home office allowance?", "claim": "You can spend the home setup money on furniture such as a seat or table.", "label": "supported"}
+{"id": "c025", "question": "When must I submit expense claims?", "claim": "Expense claims must be submitted within 30 days of the expense date.", "label": "supported"}
+{"id": "c026", "question": "When must I submit expense claims?", "claim": "Expense claims must be submitted within 60 days of the expense date.", "label": "contradicted"}
+{"id": "c027", "question": "Do I need receipts?", "claim": "Original receipts are required for any expense above 500 rupees.", "label": "supported"}
+{"id": "c028", "question": "Do I need receipts?", "claim": "Digital photos of receipts are accepted instead of originals.", "label": "unsupported"}
+{"id": "c029", "question": "What is the hotel limit?", "claim": "The domestic hotel limit is 6000 rupees per night.", "label": "supported"}
+{"id": "c030", "question": "What is the hotel limit?", "claim": "The international hotel limit is 250 US dollars per night.", "label": "contradicted"}
+{"id": "c031", "question": "Can I fly business class?", "claim": "Business class is allowed on flights longer than 8 hours with Director approval.", "label": "supported"}
+{"id": "c032", "question": "Can I fly business class?", "claim": "Business class is allowed on all international flights.", "label": "contradicted"}
+{"id": "c033", "question": "How fast are claims reimbursed?", "claim": "Approved claims are reimbursed within 15 working days.", "label": "supported"}
+{"id": "c034", "question": "Is alcohol reimbursable?", "claim": "Alcohol can be reimbursed at team dinners.", "label": "contradicted"}
+{"id": "c035", "question": "Is alcohol reimbursable?", "claim": "Drinks with alcohol are never paid back by the company.", "label": "supported"}
+{"id": "c036", "question": "What are the password rules?", "claim": "Passwords must be at least 14 characters long.", "label": "supported"}
+{"id": "c037", "question": "What are the password rules?", "claim": "Passwords must be at least 8 characters long.", "label": "contradicted"}
+{"id": "c038", "question": "What are the password rules?", "claim": "Passwords must be changed every 90 days.", "label": "unsupported"}
+{"id": "c039", "question": "Is MFA required?", "claim": "Multi-factor authentication is mandatory for all company accounts.", "label": "supported"}
+{"id": "c040", "question": "When does my laptop lock?", "claim": "Company laptops lock automatically after 5 minutes of inactivity.", "label": "supported"}
+{"id": "c041", "question": "When does my laptop lock?", "claim": "Company laptops lock after 15 minutes of inactivity.", "label": "contradicted"}
+{"id": "c042", "question": "Can I use a USB drive?", "claim": "USB storage devices are blocked on company laptops.", "label": "supported"}
+{"id": "c043", "question": "Can I use a USB drive?", "claim": "USB drives can be used after IT scans them for malware.", "label": "unsupported"}
+{"id": "c044", "question": "How do I report an incident?", "claim": "Security incidents must be reported to the security team within 24 hours.", "label": "supported"}
+{"id": "c045", "question": "How do I report an incident?", "claim": "Security incidents must be reported within 72 hours.", "label": "contradicted"}
+{"id": "c046", "question": "How long are customer records kept?", "claim": "Customer records are kept for 7 years after the contract ends.", "label": "supported"}
+{"id": "c047", "question": "How long are customer records kept?", "claim": "Customer records are retained for 10 years after the contract ends.", "label": "contradicted"}
+{"id": "c048", "question": "How long are logs kept?", "claim": "Application logs are retained for 90 days.", "label": "supported"}
+{"id": "c049", "question": "How long are backups kept?", "claim": "Backups are encrypted and retained for 35 days.", "label": "supported"}
+{"id": "c050", "question": "How long are backups kept?", "claim": "Backups are stored in two separate geographic regions.", "label": "unsupported"}
+{"id": "c051", "question": "How fast are deletion requests handled?", "claim": "Customer deletion requests must be completed within 30 days.", "label": "supported"}
+{"id": "c052", "question": "Can I use AI tools?", "claim": "Employees may use approved AI assistants for internal work.", "label": "supported"}
+{"id": "c053", "question": "Can I use AI tools?", "claim": "Customer personal data may be entered into external AI tools.", "label": "contradicted"}
+{"id": "c054", "question": "Does AI code need review?", "claim": "All AI-generated code must be reviewed by a human before merging.", "label": "supported"}
+{"id": "c055", "question": "Does AI code need review?", "claim": "AI-generated code must also pass an automated security scan.", "label": "unsupported"}
+{"id": "c056", "question": "Must AI content be labelled?", "claim": "AI-generated content sent to customers must be labelled as AI-generated.", "label": "supported"}
+{"id": "c057", "question": "When are reviews?", "claim": "Performance reviews happen twice a year, in April and October.", "label": "supported"}
+{"id": "c058", "question": "When are reviews?", "claim": "Performance reviews happen once a year in March.", "label": "contradicted"}
+{"id": "c059", "question": "Who gets a bonus?", "claim": "Employees rated 4 or above on the 5-point scale are eligible for the bonus.", "label": "supported"}
+{"id": "c060", "question": "Who gets a bonus?", "claim": "The bonus is 15 percent of annual salary.", "label": "unsupported"}
+{"id": "c061", "question": "How long is a PIP?", "claim": "A performance improvement plan lasts 60 days.", "label": "supported"}
+{"id": "c062", "question": "What happens on day one?", "claim": "New hires receive their laptop on the first day.", "label": "supported"}
+{"id": "c063", "question": "When is security training due?", "claim": "Security training must be completed within the first 14 days.", "label": "supported"}
+{"id": "c064", "question": "When is security training due?", "claim": "Security training must be completed within the first 30 days.", "label": "contradicted"}
+{"id": "c065", "question": "Do new hires get a buddy?", "claim": "Every new hire gets an onboarding buddy for the first 3 months.", "label": "supported"}
+{"id": "c066", "question": "Do new hires get a buddy?", "claim": "New hires also meet the CEO in their first week.", "label": "unsupported"}
+{"id": "c067", "question": "What is the sick leave policy?", "claim": "Sick leave can be taken in half-day units.", "label": "unsupported"}
+{"id": "c068", "question": "Can I work from home?", "claim": "Remote work days must be booked in the HR portal a week in advance.", "label": "unsupported"}
+{"id": "c069", "question": "What are the password rules?", "claim": "A password manager is provided to every employee.", "label": "unsupported"}
+{"id": "c070", "question": "When are reviews?", "claim": "Managers must complete a calibration meeting before ratings are final.", "label": "unsupported"}
+{"id": "c071", "question": "What is the hotel limit?", "claim": "Hotel bookings must be made through the company travel agency.", "label": "unsupported"}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Governance Console</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --muted:#6b6b66; --card:#fff; --line:#e3e2dd;
+          --ok:#1f7a4d; --warn:#a15c00; --bad:#b3261e; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --fg:#ecebe6; --muted:#9a998f; --card:#1f1f1d; --line:#33332f; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width:880px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:22px; margin:0 0 4px; } p.sub { color:var(--muted); margin:0 0 24px; }
+  label { display:block; font-weight:600; margin:14px 0 6px; }
+  input, textarea { width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:8px;
+                    background:var(--card); color:var(--fg); font:inherit; }
+  textarea { min-height:110px; resize:vertical; }
+  .row { display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; }
+  button { padding:10px 16px; border-radius:8px; border:1px solid var(--line); background:var(--fg); color:var(--bg);
+           font-weight:600; cursor:pointer; } button.alt { background:transparent; color:var(--fg); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px; margin-top:22px; }
+  .badge { display:inline-block; padding:2px 10px; border-radius:99px; font-weight:700; font-size:13px; color:#fff; }
+  .approve { background:var(--ok); } .revise { background:var(--warn); } .block { background:var(--bad); }
+  .claim { border-left:4px solid var(--line); padding:8px 12px; margin:10px 0; }
+  .claim.supported { border-color:var(--ok); } .claim.unsupported { border-color:var(--warn); }
+  .claim.contradicted { border-color:var(--bad); }
+  .muted { color:var(--muted); font-size:13px; } code { font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AI Governance Console</h1>
+  <p class="sub">Checks an AI answer claim-by-claim against the policy corpus, then approves, revises or blocks it.</p>
+  <label for="q">Question</label>
+  <input id="q" value="How much annual leave do I get?">
+  <label for="a">AI answer to audit</label>
+  <textarea id="a">Full-time employees get 24 days of paid annual leave each calendar year. Up to 15 unused leave days can be carried forward to the next year. Unused days can be encashed at the basic salary rate.</textarea>
+  <div class="row">
+    <button id="audit">Audit answer</button>
+    <button id="ask" class="alt">Generate &amp; audit (needs LLM)</button>
+  </div>
+  <div id="out"></div>
+</main>
+<script>
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+async function call(path, body) {
+  const out = document.getElementById("out");
+  out.innerHTML = '<div class="card muted">Running pipeline…</div>';
+  try {
+    const r = await fetch(path, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || r.statusText);
+    const claims = d.claims.map(c => `<div class="claim ${c.label}"><b>${esc(c.label)}</b> — ${esc(c.claim)}
+        <div class="muted">${esc(c.rationale)}${c.evidence_id ? ` · evidence <code>${esc(c.evidence_id)}</code>` : ""}</div></div>`).join("");
+    out.innerHTML = `<div class="card">
+        <span class="badge ${d.decision}">${d.decision.toUpperCase()}</span>
+        <span class="muted"> risk ${d.risk_score} · trace <code>${esc(d.trace_id)}</code></span>
+        <p>${esc(d.final_answer)}</p>
+        ${d.reasons.length ? `<p class="muted">${d.reasons.map(esc).join(" · ")}</p>` : ""}
+      </div><div class="card"><b>Claims</b>${claims || '<p class="muted">No claims.</p>'}</div>`;
+  } catch (e) { out.innerHTML = `<div class="card"><b>Error:</b> ${esc(e.message)}</div>`; }
+}
+document.getElementById("audit").onclick = () =>
+  call("/audit", {question: document.getElementById("q").value, answer: document.getElementById("a").value});
+document.getElementById("ask").onclick = () => call("/ask", {question: document.getElementById("q").value});
+</script>
+</body>
+</html>

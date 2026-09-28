@@ -1,0 +1,20 @@
+{"id": "p001", "text": "Contact me at priya.sharma@example.com tomorrow.", "expected_types": ["email"]}
+{"id": "p002", "text": "My number is +91 98450 12345.", "expected_types": ["phone"]}
+{"id": "p003", "text": "Call 9845012345 after 6 pm.", "expected_types": ["phone"]}
+{"id": "p004", "text": "Reach the London office on +44 20 7946 0958.", "expected_types": ["phone"]}
+{"id": "p005", "text": "Aadhaar: 4521 8830 1942", "expected_types": ["aadhaar"]}
+{"id": "p006", "text": "PAN ABCPE1234K was verified.", "expected_types": ["pan"]}
+{"id": "p007", "text": "Card 4111 1111 1111 1111 expires next year.", "expected_types": ["credit_card"]}
+{"id": "p008", "text": "Use card 5500-0000-0000-0004 for the booking.", "expected_types": ["credit_card"]}
+{"id": "p009", "text": "Email hr@example.org or call 9123456780.", "expected_types": ["email", "phone"]}
+{"id": "p010", "text": "Customer records are retained for 7 years.", "expected_types": []}
+{"id": "p011", "text": "The allowance is 15000 rupees.", "expected_types": []}
+{"id": "p012", "text": "Card 4111 1111 1111 1112 is invalid.", "expected_types": []}
+{"id": "p013", "text": "Version 2.14.3 fixed the bug on 2026-09-25.", "expected_types": []}
+{"id": "p014", "text": "Meet in room 404 at 11 am.", "expected_types": []}
+{"id": "p015", "text": "Invoice INV-2026-00017 totals 48000 rupees.", "expected_types": []}
+{"id": "p016", "text": "Employee ID 00123456 joined in 2025.", "expected_types": []}
+{"id": "p017", "text": "The limit is 180 US dollars per night.", "expected_types": []}
+{"id": "p018", "text": "Ticket number 1800 2233 4455 is still open.", "expected_types": []}
+{"id": "p019", "text": "Tracking code 7788 1122 3344 was dispatched.", "expected_types": []}
+{"id": "p020", "text": "Her personal mobile is 8123456789 and work email is k.rao@corp-example.in.", "expected_types": ["phone", "email"]}

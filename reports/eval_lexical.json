@@ -1,0 +1,117 @@
+{
+  "judge": "lexical",
+  "corpus_passages": 22,
+  "seconds": 0.02,
+  "claims": {
+    "accuracy": 0.873,
+    "confusion": {
+      "supported": {
+        "supported": 33,
+        "unsupported": 3,
+        "contradicted": 1
+      },
+      "unsupported": {
+        "supported": 0,
+        "unsupported": 15,
+        "contradicted": 1
+      },
+      "contradicted": {
+        "supported": 0,
+        "unsupported": 4,
+        "contradicted": 14
+      }
+    },
+    "flagging": {
+      "precision": 0.895,
+      "recall": 1.0,
+      "f1": 0.944
+    },
+    "per_label": {
+      "supported": {
+        "precision": 1.0,
+        "recall": 0.892,
+        "f1": 0.943
+      },
+      "unsupported": {
+        "precision": 0.682,
+        "recall": 0.938,
+        "f1": 0.789
+      },
+      "contradicted": {
+        "precision": 0.875,
+        "recall": 0.778,
+        "f1": 0.824
+      }
+    },
+    "errors": [
+      {
+        "id": "c013",
+        "claim": "New fathers get two weeks off, to be used before the baby is half a year old.",
+        "gold": "supported",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c019",
+        "claim": "Fully remote work can be approved by your direct manager.",
+        "gold": "contradicted",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c024",
+        "claim": "You can spend the home setup money on furniture such as a seat or table.",
+        "gold": "supported",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c032",
+        "claim": "Business class is allowed on all international flights.",
+        "gold": "contradicted",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c034",
+        "claim": "Alcohol can be reimbursed at team dinners.",
+        "gold": "contradicted",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c035",
+        "claim": "Drinks with alcohol are never paid back by the company.",
+        "gold": "supported",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c058",
+        "claim": "Performance reviews happen once a year in March.",
+        "gold": "contradicted",
+        "pred": "unsupported"
+      },
+      {
+        "id": "c059",
+        "claim": "Employees rated 4 or above on the 5-point scale are eligible for the bonus.",
+        "gold": "supported",
+        "pred": "contradicted"
+      },
+      {
+        "id": "c060",
+        "claim": "The bonus is 15 percent of annual salary.",
+        "gold": "unsupported",
+        "pred": "contradicted"
+      }
+    ],
+    "n": 71
+  },
+  "decisions": {
+    "n": 16,
+    "accuracy": 1.0,
+    "unsafe_approvals": 0,
+    "mismatches": []
+  },
+  "pii": {
+    "n": 20,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "errors": []
+  }
+}
